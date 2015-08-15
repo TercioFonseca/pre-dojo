@@ -1,2 +1,38 @@
-Coloque aqui suas instruções ou comentários que ache útil/relevantes para possamos ler 
-quando estivermos avaliando a sua solução
+Olá,
+
+a aplicação foi desenvolvida para interpretar os arquivos de log exatamente conforme o modelo disposto no gitHub.
+Qualquer alteração na composição do modelo pode afetar no funcionamento correto da aplicação.
+
+Foi desenvolvida baseada em REST com camadas de model e service, para o funcionamento correto é necessário ter o Tomcat 7.x
+
+Tomcat na Porta 80 se não for possível usar esta porta, basta alterar a porta no tomcat e modificar o arquivo main.js para 
+enviar as requisições de serviços no endereço correto com a porta. É importante lembrar que se houver alteração no nome do 
+.war também se faz necessário a alteração do endereço de consumo de serviços também.
+
+JRE Java 8 - Caso necessário basta alterar os Facets da do projeto
+
+necessário criar um diretório "C://upload" para que seja guardado o arquivo de log para montagem do ranking
+
+
+Como meu tempo foi curto, agora por exemplo são 02:42 da manha do dia 15/08/15 tentei ao máximo possível desenvolver a plicação
+de modo expansiva e de fácil manutenção do código tratando cada objeto da aplicação de forma independente.
+
+Foi usado Jquery, CSS, HTML, ANgularJS, Jersey, JAVA, JSon como tecnologias
+para desenvolver a aplicação.
+
+
+De modo geral será aberto uma pagina web de consumo, selecionar um arquivo de logo com o mesmo formato e padrão do repositório
+(se houver alteração na ordem ou espaçamento das linhas a aplicação pode não funcionar), enviar o arquivo clicando em UPLOAD,
+será exibido uma caixa de texto informando se o arquivo foi lido com sucesso, após isso basta clicar no botão de montar ranking
+que a aplicação montará a lista dos jogadores.
+
+Como a falta de tempo foi muita para realizar este teste(porque atualmente estou trabalhando) criei o que se pede como premissa
+caso o jogador não tenha sido morto em nenhum momento da partida ele é destacado em verde, na coluna de haskilled e killed existem
+dropdwons que mostra a lista de jogadores que foram mortos e que o mataram.
+
+Se as partidas não tiverem data de has ened todas serão tratadas como uma só, fazendo com que mesmo que os jogadores tenham logado
+apos um start de outra partida fiquem na lista da partida anterior. 
+
+
+
+Os casos de testes são casos simples e que tambem requer uma atenção quanto ao caminho do diretório dos arquivos a serem carregados para testes
